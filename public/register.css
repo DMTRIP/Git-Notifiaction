@@ -1,0 +1,163 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    background: #625F5F;
+    color: #fff;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 700;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.wrapper {
+    color: #2a2a2a;
+}
+@media (min-width: 768px) {
+    .wrapper {
+        padding: 20px;
+    }
+}
+.wrapper .form {
+    background: #fff;
+    border-radius: 4px;
+    width: 100%;
+    margin: 0 auto;
+    /*
+      * Flexbox layout for tabs to ensure they fit
+      * nicely side by side and equally spaced
+    */
+}
+@media (min-width: 768px) {
+    .wrapper .form {
+        width: 60%;
+    }
+}
+@media (min-width: 992px) {
+    .wrapper .form {
+        width: 40%;
+    }
+}
+.wrapper .form__tabs {
+    display: flex;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.wrapper .form__tabs .tab {
+    display: flex;
+    flex: 2;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    background: #f2f2f2;
+    padding: 12px 14px;
+    border-bottom: 5px solid #e5e5e5;
+    color: #939393;
+    transition-delay: 0.1s;
+}
+@media (min-width: 768px) {
+    .wrapper .form__tabs .tab {
+        font-size: 20px;
+    }
+}
+.wrapper .form__tabs .tab:first-child {
+    border-top-left-radius: 4px;
+}
+.wrapper .form__tabs .tab:last-child {
+    border-top-right-radius: 4px;
+}
+.wrapper .form__tabs .tab.active {
+    background: #fff;
+    color: #2a2a2a;
+    border-color: #37A1A8;
+    transition: 0.3s;
+}
+.wrapper .form__content {
+    padding: 0 20px 20px;
+}
+.wrapper .form__content .form-variant {
+    display: none;
+    transition: 0.5s;
+}
+@media (min-width: 768px) {
+    .wrapper .form__content .form-variant {
+        padding: 0 50px 50px;
+    }
+}
+.wrapper .form__content .form-variant.active {
+    display: block;
+}
+.wrapper .form__content .form-variant .input-group {
+    position: relative;
+}
+.wrapper .form__content .form-variant .input-group label {
+    color: #37A1A8;
+    padding: 6px 0;
+    display: block;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
+}
+.wrapper .form__content .form-variant .input-group .input-field {
+    display: block;
+    width: calc(100% - 59px);
+    height: 40px;
+    padding-left: 50px;
+    margin-bottom: 6px;
+    border: 1px solid #37A1A8;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    font-size: 1em;
+    border-radius: 0px !important;
+}
+@media (min-width: 768px) {
+    .wrapper .form__content .form-variant .input-group .input-field {
+        width: calc(100% - 53px);
+    }
+}
+.wrapper .form__content .form-variant .input-group .input-field:focus {
+    outline: none;
+    border-bottom-width: 5px;
+}
+.wrapper .form__content .form-variant .input-group .input-field--submit {
+    width: 100%;
+    border-radius: 0;
+    background: #37A1A8;
+    color: #fff;
+    border: none;
+    margin-top: 12px;
+    padding: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+.wrapper .form__content .form-variant .input-group .input-icon {
+    position: absolute;
+    top: 20px;
+    left: 5px;
+    width: 30px;
+    height: 30px;
+}
+@media (min-width: 768px) {
+    .wrapper .form__content .form-variant .input-group .input-icon {
+        top: 18px;
+    }
+}
+.wrapper .form__content .form-variant input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 30px white inset;
+}
+.wrapper .form__content .form-variant .forgot-link {
+    display: block;
+    margin-top: 12px;
+    color: #37A1A8;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+}
